@@ -1,0 +1,221 @@
+body{
+    background: #d8f0f7;
+    margin: 0 200px;
+}
+div{
+    display: block;
+}
+.logo{
+    display: inline-block;
+    width: 100px;
+    margin: 5px 5px 5px 5px;
+}
+#textarea{
+    resize: none;
+    outline: 2px solid transparent;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 100%;
+    height: 550px;
+    font-size: 20px;
+    font-family: 'Protest Strike', sans-serif;
+    
+}
+
+#textarea:focus{
+    
+    background-color: #ffffff;
+    
+}
+
+#textarea:visited{
+    background-color: #000000;
+}
+
+
+.contenedor{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+
+.sec-input{
+    width: 570%;
+    width: 940px;
+    margin: 0 auto;
+}
+.botones{
+    text-align: center;
+}
+#encriptar{
+    width: 33%;
+    margin: 20px 20px;
+    height: 50px;
+    border-color: transparent;
+
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(0, 110, 255);
+}
+
+#encriptar:hover{
+    background:#889aff;
+    color: white;
+}
+
+
+#desencriptar{
+    width: 33%;
+    margin: 20px 0 20px 20px;
+    height: 50px;
+    border-color: transparent;
+
+    border-radius: 50px;
+    color: rgb(0, 195, 255);
+}
+#desencriptar:hover{
+    color:rgb(0, 195, 255);
+    background: #d8d8d8;
+}
+
+
+
+
+#boton-eliminar{
+    position: relative;
+    top: 15px;
+    border-color: transparent;
+
+
+
+    border-radius: 40px;
+}
+#boton-eliminar:hover{
+    background-color: red;
+}
+
+.imagen-boton{
+    width: 41px;
+}
+.sin-texto{
+    
+    position: relative;
+    height: 800px;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    bottom: 100px;
+    
+    
+}
+
+.sin-texto img{
+    margin-top: 100px;
+    width: 450px;
+    padding-left: 10px;
+    padding-right: 10px ;
+}
+
+.texto-encriptado{
+    position: relative;
+    height: 800px;
+    width: 450px;
+    border-radius: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px ;
+    display: none;
+}
+
+#texto-encriptado-p2{
+    font-family: 'Protest Strike', sans-serif;
+    padding-top: 30px;
+    font-size: 25px;
+    color: black;
+}
+
+p{
+    text-align: center;
+}
+
+#p1{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Teko', sans-serif;
+}
+#p2{
+    font-family: 'Teko', sans-serif;
+}
+
+#boton-copiar{
+    position: relative;
+    top: 625px;
+    left: 100px;
+    padding: 15px 100px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    border-color:transparent;
+    color: rgb(0, 195, 255);
+}
+
+#boton-copiar:hover{
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+
+
+
+
+
+/* Estilos para Celulares */
+@media only screen and (max-width: 600px) {
+    body {
+        background: #d8f0f7;
+        margin: 0 10px; 
+    }
+    .contenedor {
+        flex-direction: column; 
+    }
+    .sec-input {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+    .texto-encriptado,
+    .sin-texto {
+        margin-top: 50px;
+        width: 100%; 
+        height: auto;
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+    .sin-texto img{
+        width: 80%;
+    }
+    #textarea {
+        width: calc(100% - 20px); /
+        height: 300px;
+        font-size: 16px; 
+    }
+    #encriptar,
+    #desencriptar,
+    #boton-eliminar {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Honk&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Honk&family=Protest+Riot&family=Protest+Strike&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    
+        <header>
+            <img src="imagenes/logo goku.png" alt="imagen de logo de goku"  class="logo">
+        </header>
+
+    <main>
+        <div class="contenedor">
+            <!--seccion input-->
+            <div class="sec-input">
+                <textarea  id="textarea" onclick="fijar()" name="input" required="true"  placeholder="Ingrese texto a encriptar"></textarea>
+    
+                <div class="botones">
+                    
+                    <button onclick="Encriptar()" id="encriptar"> Encriptar</button>
+                    <button onclick="desencriptar()" id="desencriptar"> Desencrpitar</button>
+                    <button onclick="limpiarTexto()" id="boton-eliminar"><img class="imagen-boton" src="imagenes/eliminar.png" alt=""></button>
+                </div>
+    
+            </div>
+            <!--seccion ouput-->
+            <div class="sec-ouput">
+                <!--imagen cuando no hay nada-->
+                <div class="sin-texto">
+                    <img src="imagenes/fondo_oput.png"  alt="fondo del ouput.png">
+                <p id="p1">Ningún mensaje fue encontrado</p>
+                <p id=>Ingrese texto deseado a encriptar o desencrpitar</p>
+                </div>
+
+                <!--imagen cuando hay texto-->
+                <div class="texto-encriptado" id="texto-encriptado">  
+                    <p id="texto-encriptado-p2"></p>
+                    <button onclick="copiarAlPortapapeles()" id="boton-copiar">COPIAR</button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+
+
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
